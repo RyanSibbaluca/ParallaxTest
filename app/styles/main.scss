@@ -68,25 +68,56 @@ body {
 
 .logo-name {
   position: absolute;
+  color: #37dde0;
+  text-shadow: 0 0 4px black;
+  position: absolute;
+  margin-left: 50px;
   bottom: 0;
-  right: 0;
-  margin-right: 200px;
-  margin-bottom: -200px;
-  color: white;
 }
 
-section.content {
-  height: 1000px;
+section {
+  &.content {
+    height: 1000px;
+    background-color: white;
+  }
+  &.contact {
+    background-color: #528;
+  }
+}
+
+section {
+  position: relative;
+  z-index: 2;
+
+  &:last-of-type {
+    margin-bottom: 166px;
+  }
 }
 
 .profile-picture {
   height: 300px;
   background: {
-    image: url('https://s-media-cache-ak0.pinimg.com/originals/11/5e/ff/115eff926d15ed5449eee89e034669a5.jpg');
+    image: url('/images/profile picture 6.jpg');
+    // image: url('https://s-media-cache-ak0.pinimg.com/originals/11/5e/ff/115eff926d15ed5449eee89e034669a5.jpg');
     position: top center;
     repeat: no-repeat;
     attachment: fixed;
   }
   // width: 300px;
   border-radius: 50%;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+  background: black;
+  color: white;
+  padding: 40px 10px;
+  text-align: center;
+
+  a {
+    color: white;
+  }
 }

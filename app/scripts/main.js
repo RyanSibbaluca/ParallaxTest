@@ -9,5 +9,5 @@ $(window).scroll(function() {
 
   $('.logo-name').css({
     'transform': 'translate(0px, -' + scrollFromTop/10 + '%)'
-  })
+  });
 });
