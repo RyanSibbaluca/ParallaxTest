@@ -1,11 +1,20 @@
 // bower:scss
 // endbower
+html *
+{
+  font-family: monospace;
+}
 
 body {
   background: #fafafa;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #333;
   margin: 0;
+}
+
+h1, p {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
 }
 
 .hero-unit {
@@ -37,7 +46,8 @@ body {
   overflow: hidden;
   background: {
     // image: url(http://www.pixelstalk.net/wp-content/uploads/2016/04/Photos-download-abstract-minimalist-wallpaper-HD.jpg);
-    image: url(https://wallpaperscraft.com/image/minimalism_sky_clouds_sun_mountains_lake_landscape_95458_1920x1080.jpg);
+    //image: url(https://wallpaperscraft.com/image/minimalism_sky_clouds_sun_mountains_lake_landscape_95458_1920x1080.jpg);
+    image: url(http://allswalls.com/images/hexagons-wallpaper-1.jpg);
     size: cover;
     position: top center;
     attachment: fixed;
@@ -67,30 +77,63 @@ body {
 }
 
 .logo-name {
-  position: absolute;
   color: #37dde0;
   text-shadow: 0 0 4px black;
+}
+
+.intro-text {
   position: absolute;
+  bottom: 10px;
   margin-left: 50px;
-  bottom: 0;
+  color: white;
+  font-family: monospace;
 }
 
 section {
+  background-color: white;
   &.content {
     height: 1000px;
     background-color: white;
   }
+
+  &.history {
+    padding: 50px 50px;
+  }
+
   &.contact {
     background-color: #528;
   }
 }
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.history-row {
+  margin: auto;
+
+  > div {
+    float: left;
+
+    &.company-icon {
+      width: 75px;
+      height: 75px;
+
+      background-color: #4f997b;
+    }
+  }
+}
+
 
 section {
   position: relative;
   z-index: 2;
 
   &:last-of-type {
-    margin-bottom: 166px;
+    margin-bottom: 191px;
   }
 }
 
@@ -119,5 +162,39 @@ footer {
 
   a {
     color: white;
+  }
+}
+
+.scmedia {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+
+  &:before {
+    position: absolute;
+    left: 0;
+    background: {
+      image: url('/images/social-media-icons.png');
+      size: 450px;
+    }
+    content: '';
+    width: 69px;
+    height: 69px;
+  }
+
+  &.facebook:before {
+    background-position: -21px -17px;
+  }
+
+  &.linkedin:before {
+    background-position: -63px -86px;
+  }
+
+}
+
+.margin {
+  &-bottom-1 {
+    margin-bottom: 10px;
   }
 }
