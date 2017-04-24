@@ -17,6 +17,16 @@ h1, p {
   -webkit-margin-after: 0;
 }
 
+h1 {
+  font-size: 26px;
+}
+
+p {
+  font-size: 16px;
+}
+
+$margin-left: 100px;
+
 .hero-unit {
   margin: 50px auto 0 auto;
   width: 300px;
@@ -48,6 +58,7 @@ h1, p {
     // image: url(http://www.pixelstalk.net/wp-content/uploads/2016/04/Photos-download-abstract-minimalist-wallpaper-HD.jpg);
     //image: url(https://wallpaperscraft.com/image/minimalism_sky_clouds_sun_mountains_lake_landscape_95458_1920x1080.jpg);
     image: url(http://allswalls.com/images/hexagons-wallpaper-1.jpg);
+    image: url('/images/landscape-1440p.jpg');
     size: cover;
     position: top center;
     attachment: fixed;
@@ -62,6 +73,7 @@ h1, p {
     image: url('/images/RRS Skeleton.png');
     size: contain;
     position: center;
+    position: $margin-left;
     repeat: no-repeat;
   }
   position:absolute;
@@ -69,7 +81,7 @@ h1, p {
   margin-top: -50px;
 
 
-  &.alternate-background {
+  .alternate-background & {
     background: {
       image: url('/images/RRS Block fill.png');
     }
@@ -84,20 +96,33 @@ h1, p {
 .intro-text {
   position: absolute;
   bottom: 10px;
-  margin-left: 50px;
-  color: white;
+  margin-left: $margin-left;
+  color: black;
   font-family: monospace;
+
+  .alternate-background & {
+    color: white;
+  }
 }
 
 section {
   background-color: white;
+
+  &.summary {
+    padding: 50px $margin-left;
+
+    h1, p {
+      margin-bottom: 1.5em;
+    }
+  }
+
   &.content {
     height: 1000px;
     background-color: white;
   }
 
   &.history {
-    padding: 50px 50px;
+    padding: 50px $margin-left;
   }
 
   &.contact {
