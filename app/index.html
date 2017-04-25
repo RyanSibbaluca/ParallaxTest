@@ -1,10 +1,12 @@
 <!doctype html>
 <html class="no-js" lang="">
   <head>
+
     <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Swizzle Plate</title>
+    <title>Swizzle Plate | Ryan Sibbaluca</title>
+    <meta name="description" content="Ryan Sibbaluca | Web Developer">
+    <meta name="author" content="Ryan Sibbaluca - ryan.sibbaluca@gmail.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
@@ -14,6 +16,9 @@
     <!-- endbower -->
     <!-- endbuild -->
 
+    <!-- Quicksand Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
@@ -21,11 +26,15 @@
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
+
+    <!-- Font Awesome for Icons -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
   <body>
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+
     <header class="intro-name">
     <!-- <header class="intro-name alternate-background"> -->
 
@@ -42,9 +51,20 @@
           front-end developer
         </p>
       </div>
+
+      <!--<button class="scroll-down">-->
+        <!--<i class="fa fa-chevron-down" id="scroll-to-first-section"></i>-->
+      <!--</button>-->
+
+
+      <a class="scroll-down" href="#summary">
+        <i class="fa fa-chevron-down"></i>
+      </a>
+
+
     </header>
 
-    <section class="summary">
+    <section id="summary">
       <h1>
         <!-- About me -->
         About
@@ -69,7 +89,7 @@
     </section>
 
 
-    <section class="skills">
+    <section id="skills">
 
       <h1>
         Knowledge, skills and abilities
@@ -115,7 +135,7 @@
 
     <!--</section>-->
 
-    <section class="history">
+    <section id="history">
       <h1>
         My work history
       </h1>
@@ -136,7 +156,7 @@
         </div>
       </div>
 
-      <div class="history-row clearfix">
+      <div id="history-row clearfix">
         <div class="company-icon">
 
         </div>
@@ -165,7 +185,14 @@
       <a href="mailto:ryan.sibbaluca@gmail.com">
         <img src="images/mail-icon.png" class="mail-icon"/>
       </a>
+
+      <br/>
+      <a href="http://www.ellensriley.com">© Ryan Ralph Sibbaluca 2017</a>
     </footer>
+
+    <a href="javascript:" id="return-to-top">
+      <i class="fa fa-chevron-up"></i>
+    </a>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
