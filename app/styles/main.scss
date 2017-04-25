@@ -12,7 +12,7 @@ body {
   margin: 0;
 }
 
-h1, p {
+h1, p, ul {
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
 }
@@ -52,13 +52,16 @@ $margin-left: 100px;
 
 .intro-name {
   position: relative;
-  height: 600px;
+  z-index: 2;
+  min-height: 100vh;
   overflow: hidden;
   background: {
     // image: url(http://www.pixelstalk.net/wp-content/uploads/2016/04/Photos-download-abstract-minimalist-wallpaper-HD.jpg);
     //image: url(https://wallpaperscraft.com/image/minimalism_sky_clouds_sun_mountains_lake_landscape_95458_1920x1080.jpg);
     image: url(http://allswalls.com/images/hexagons-wallpaper-1.jpg);
     image: url('/images/landscape-1440p.jpg');
+    color: brown;
+    image: url('/images/brown-gradient.svg');
     size: cover;
     position: top center;
     attachment: fixed;
@@ -215,11 +218,17 @@ footer {
   &.linkedin:before {
     background-position: -63px -86px;
   }
+}
 
+.mail-icon {
+  height: 69px;
 }
 
 .margin {
-  &-bottom-1 {
+  &-bottom-10 {
     margin-bottom: 10px;
+  }
+  &-bottom-20 {
+    margin-bottom: 20px;
   }
 }

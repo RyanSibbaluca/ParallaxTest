@@ -1,5 +1,3 @@
-console.log('\'Allo \'Allo!');
-
 $(window).scroll(function() {
   var scrollFromTop = $(this).scrollTop();
 
