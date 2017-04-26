@@ -73,3 +73,16 @@ $('a').click(function() {
   });
   return false;
 });
+
+// init controller
+var controller = new ScrollMagic.Controller();
+var scene = new ScrollMagic.Scene({triggerElement: "#trigger-animate"})
+  .setClassToggle("#trigger-animate", "animate")
+  .addTo(controller);
+// var scene2 = new ScrollMagic.Scene({triggerElement: "#trigger-animate"})
+//   .setClassToggle(".animate-enter-text", "animate")
+//   .addTo(controller);
+
+var scene3 = new ScrollMagic.Scene({triggerElement: "#trigger-animate", duration: 300})
+  .setTween(".animate-enter-text", {transform: "translate(0,0)"})
+  .addTo(controller);

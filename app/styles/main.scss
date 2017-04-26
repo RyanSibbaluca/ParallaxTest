@@ -369,3 +369,35 @@ footer {
   top: 5px;
 }
 
+.animate-enter-text {
+  transition: all 0.7s ease-out;
+  transform: translate(50px, 0px);
+
+  &.animate {
+    transform: translate(0,0);
+  }
+}
+
+.slider {
+  height: 5px;
+  width: 30px;
+  background-color: white;
+  transition: all 0.7s ease-out;
+
+  &.animate {
+    width: 110px;
+
+    + .slider-shadow {
+      transform: translate(10px, 0px);
+    }
+  }
+}
+
+
+.slider-shadow {
+  height: 2px;
+  width: 50px;
+  background: red;
+  transform: translate(-10px, 0px);
+  transition: all 0.6s ease-out;
+}
